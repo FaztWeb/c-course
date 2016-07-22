@@ -3,8 +3,8 @@
 int main(int argc, char const *argv[]) {
   int a;
   float b;
-  printf("Introduce un Entero: ");
-  scanf("%d",&a );
+   printf("Introduce un Entero: ");
+   scanf("%d",&a );
 
   printf("Introduce un Flotante: " );
   scanf("%f",&b);
