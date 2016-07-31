@@ -8,14 +8,22 @@ int main(int argc, char const *argv[]) {
   printf("Ingresa la Minuto: ");scanf("%d",&minuto );
   printf("Ingresa la Segundo: ");scanf("%d",&segundo);
 
-  if (segundo<=59) {
+  if (hora<=23 && minuto<=59 && segundo<=59) {
     segundo++;
-    if (segundo == 60) {
+    if (segundo==60) {
       segundo=0;
       minuto++;
-      printf("%d:%d:%d\n",hora,minuto,segundo );
-
     }
+    if (minuto==60) {
+      minuto=0;
+      hora++;
+    }
+    if (hora==24) {
+      hora=0;
+    }
+    printf("mas un segundo es: %d:%d:%d\n",hora,minuto,segundo );
+  }else{
+    printf("No es una Hora Correcta");
   }
   return 0;
 }
