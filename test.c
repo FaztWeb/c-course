@@ -1,22 +1,18 @@
 #include <stdio.h>
 
 void main(void){
-  int a = 0;
-
-  while(a < 5){
-    printf("a is equal to %d\n", a);
-    a++;
-  }
-
-  printf("-------------------\n");
-
-  while(1){
-    printf("a is equal to %d\n", a);
-    a--;
-    if (a == 0) {
-      break;
+  int c, nl, blanks, tabs;
+  nl=0;
+  while ((c = getchar()) != EOF) {
+    if (c == '\n') {
+      ++nl;
     }
+    // if (c == '\b') {
+    //   ++blanks;
+    // }
+    if (c == '\t') {
+      ++tabs;
+    }
+    printf("blanks: %d, tabs:%d, newlines: %d\n", c, tabs, nl);
   }
-
-  printf("a is equal to %d and I've finished", a);
 }
