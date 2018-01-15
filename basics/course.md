@@ -1,2 +1,0 @@
-- hello-world.c
-- hello-world2.c

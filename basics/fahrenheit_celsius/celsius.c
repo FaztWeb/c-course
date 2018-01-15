@@ -9,9 +9,11 @@ void main (void){
   step  = 20;
 
   celsius = lower;
+
   while(celsius <= upper){
     fahr = celsius  * 9/5 + 32;
     printf("%f\t%f\n",celsius, fahr );
     celsius += step;
   }
+  
 }
