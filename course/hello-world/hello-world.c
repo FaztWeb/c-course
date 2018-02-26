@@ -1,4 +1,4 @@
-// include information about standar library
+// include standard library
 #include <stdio.h>
 
 // define a function named main that receives
@@ -7,5 +7,5 @@
 main() {
   // n is a "scape sequence"
   printf("Hello World\n");
-  
+
 }
